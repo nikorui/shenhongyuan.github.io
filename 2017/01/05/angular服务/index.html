@@ -11,7 +11,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/01/05/angular服务/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Provider最大的服务，唯一一个可配置的12345678910//serviceNameProvider是provider中实例app.config(function(serviceNameProvider)&amp;#123;    serviceNameProvider.aa = 200;&amp;#125;)app.provider(&amp;apos;serviceName&amp;apos;,function()&amp;">
-<meta property="og:updated_time" content="2017-01-05T09:06:21.000Z">
+<meta property="og:updated_time" content="2017-01-05T10:38:39.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="angular服务">
 <meta name="twitter:description" content="Provider最大的服务，唯一一个可配置的12345678910//serviceNameProvider是provider中实例app.config(function(serviceNameProvider)&amp;#123;    serviceNameProvider.aa = 200;&amp;#125;)app.provider(&amp;apos;serviceName&amp;apos;,function()&amp;">
@@ -52,9 +52,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -86,7 +86,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="Provider"><a href="#Provider" class="headerlink" title="Provider"></a>Provider</h2><p>最大的服务，唯一一个可配置的<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">//serviceNameProvider是provider中实例</div><div class="line">app.config(function(serviceNameProvider)&#123;</div><div class="line">    serviceNameProvider.aa = 200;</div><div class="line">&#125;)</div><div class="line">app.provider(&apos;serviceName&apos;,function()&#123;</div><div class="line">    this.aa = 100;</div><div class="line">    this.$get = function()&#123;</div><div class="line">        return &#123;name:1&#125;</div><div class="line">    &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
-<h2 id="factory"><a href="#factory" class="headerlink" title="factory"></a>factory</h2><p>不能配置，最常用的服务<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">app.factory(&apos;serviceName&apos;,function()&#123;</div><div class="line">    return &#123;name:1&#125;</div><div class="line">&#125;)</div><div class="line">``` </div><div class="line">## service</div><div class="line">基于factory,是factory return后的对象的构造函数</div></pre></td></tr></table></figure></p>
+<h2 id="factory"><a href="#factory" class="headerlink" title="factory"></a>factory</h2><p>不能配置，最常用的服务<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">app.factory(&apos;serviceName&apos;,function()&#123;</div><div class="line">    return &#123;name:1&#125;</div><div class="line">&#125;)</div><div class="line">``` </div><div class="line"></div><div class="line">## service</div><div class="line">基于factory,是factory return后的对象的构造函数</div></pre></td></tr></table></figure></p>
 <p>app.service(‘serviceName’,function(){<br>    this.name = 1;<br>})<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">## value</div><div class="line">基于factory,将对象包装一个函数将其传入到factory</div></pre></td></tr></table></figure></p>
 <p>app.value(‘serviceName’,{name:1})<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">## constant</div><div class="line">## ionic(样式) + angularjs(逻辑) + phonegap(cordova)</div><div class="line"></div><div class="line">## 安装</div></pre></td></tr></table></figure></p>
 <p>npm install cordova ionic -g<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">## 初始化项目</div></pre></td></tr></table></figure></p>
@@ -96,7 +96,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/01/05/angular服务/" data-id="cixk5f17600004rfye1vdr4ia" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2017/01/05/angular服务/" data-id="cixk8pvm50000l8fyydqe24yt" class="article-share-link">Share</a>
       
       
     </footer>
@@ -107,7 +107,7 @@
   
   
     <a href="/2017/01/01/npm/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Ancien</strong>
+      <strong class="article-nav-caption">Older</strong>
       <div class="article-nav-title">npm包管理</div>
     </a>
   
@@ -140,7 +140,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Articles récents</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
         
@@ -177,7 +177,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2017 John Doe<br>
-      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
