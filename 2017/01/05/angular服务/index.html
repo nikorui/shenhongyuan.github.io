@@ -11,7 +11,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/01/05/angular服务/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Provider最大的服务，唯一一个可配置的12345678910//serviceNameProvider是provider中实例app.config(function(serviceNameProvider)&amp;#123;    serviceNameProvider.aa = 200;&amp;#125;)app.provider(&amp;apos;serviceName&amp;apos;,function()&amp;">
-<meta property="og:updated_time" content="2017-01-05T10:38:39.000Z">
+<meta property="og:updated_time" content="2017-01-05T10:41:26.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="angular服务">
 <meta name="twitter:description" content="Provider最大的服务，唯一一个可配置的12345678910//serviceNameProvider是provider中实例app.config(function(serviceNameProvider)&amp;#123;    serviceNameProvider.aa = 200;&amp;#125;)app.provider(&amp;apos;serviceName&amp;apos;,function()&amp;">
@@ -66,7 +66,7 @@
         <section id="main"><article id="post-angular服务" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/01/05/angular服务/" class="article-date">
-  <time datetime="2017-01-05T09:06:21.000Z" itemprop="datePublished">2017-01-05</time>
+  <time datetime="2017-01-05T10:41:26.000Z" itemprop="datePublished">2017-01-05</time>
 </a>
     
   </div>
@@ -86,17 +86,18 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="Provider"><a href="#Provider" class="headerlink" title="Provider"></a>Provider</h2><p>最大的服务，唯一一个可配置的<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">//serviceNameProvider是provider中实例</div><div class="line">app.config(function(serviceNameProvider)&#123;</div><div class="line">    serviceNameProvider.aa = 200;</div><div class="line">&#125;)</div><div class="line">app.provider(&apos;serviceName&apos;,function()&#123;</div><div class="line">    this.aa = 100;</div><div class="line">    this.$get = function()&#123;</div><div class="line">        return &#123;name:1&#125;</div><div class="line">    &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
-<h2 id="factory"><a href="#factory" class="headerlink" title="factory"></a>factory</h2><p>不能配置，最常用的服务<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">app.factory(&apos;serviceName&apos;,function()&#123;</div><div class="line">    return &#123;name:1&#125;</div><div class="line">&#125;)</div><div class="line">``` </div><div class="line"></div><div class="line">## service</div><div class="line">基于factory,是factory return后的对象的构造函数</div></pre></td></tr></table></figure></p>
-<p>app.service(‘serviceName’,function(){<br>    this.name = 1;<br>})<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">## value</div><div class="line">基于factory,将对象包装一个函数将其传入到factory</div></pre></td></tr></table></figure></p>
-<p>app.value(‘serviceName’,{name:1})<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">## constant</div><div class="line">## ionic(样式) + angularjs(逻辑) + phonegap(cordova)</div><div class="line"></div><div class="line">## 安装</div></pre></td></tr></table></figure></p>
+<h2 id="factory"><a href="#factory" class="headerlink" title="factory"></a>factory</h2><p>不能配置，最常用的服务</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">app.factory(&apos;serviceName&apos;,function()&#123;</div><div class="line">    return &#123;name:1&#125;</div><div class="line">&#125;)</div><div class="line">``` </div><div class="line"></div><div class="line"></div><div class="line">## service</div><div class="line">基于factory,是factory return后的对象的构造函数</div></pre></td></tr></table></figure>
+<p>app.service(‘serviceName’,function(){<br>    this.name = 1;<br>})<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">## value</div><div class="line">基于factory,将对象包装一个函数将其传入到factory</div></pre></td></tr></table></figure></p>
+<p>app.value(‘serviceName’,{name:1})<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">## constant</div><div class="line">## ionic(样式) + angularjs(逻辑) + phonegap(cordova)</div><div class="line"></div><div class="line">## 安装</div></pre></td></tr></table></figure></p>
 <p>npm install cordova ionic -g<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">## 初始化项目</div></pre></td></tr></table></figure></p>
-<p>ionic start angular-ionic<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">## 打包xxx.apk  xxx.ipa</div></pre></td></tr></table></figure></p>
+<p>ionic start angular-ionic<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">## 打包xxx.apk  xxx.ipa</div></pre></td></tr></table></figure></p>
 <p>cordova add platform android （有android java）<br>ionic build android<br>```</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/01/05/angular服务/" data-id="cixk8pvm50000l8fyydqe24yt" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/01/05/angular服务/" data-id="cixk8t9jh0001m3fylg3spv34" class="article-share-link">Share</a>
       
       
     </footer>
