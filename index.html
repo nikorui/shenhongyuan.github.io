@@ -61,6 +61,46 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-angular服务" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/01/05/angular服务/" class="article-date">
+  <time datetime="2017-01-05T07:46:18.000Z" itemprop="datePublished">2017-01-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/01/05/angular服务/">angular服务</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Provider"><a href="#Provider" class="headerlink" title="Provider"></a>Provider</h2><p>最大的服务，唯一一个可配置的<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">//serviceNameProvider是provider中实例</div><div class="line">app.config(function(serviceNameProvider)&#123;</div><div class="line">    serviceNameProvider.aa = 200;</div><div class="line">&#125;)</div><div class="line">app.provider(&apos;serviceName&apos;,function()&#123;</div><div class="line">    this.aa = 100;</div><div class="line">    this.$get = function()&#123;</div><div class="line">        return &#123;name:1&#125;</div><div class="line">    &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
+<h2 id="factory"><a href="#factory" class="headerlink" title="factory"></a>factory</h2><p>不能配置，最常用的服务<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">app.factory(&apos;serviceName&apos;,function()&#123;</div><div class="line">    return &#123;name:1&#125;</div><div class="line">&#125;)</div><div class="line">``` </div><div class="line">## service</div><div class="line">基于factory,是factory return后的对象的构造函数</div></pre></td></tr></table></figure></p>
+<p>app.service(‘serviceName’,function(){<br>    this.name = 1;<br>})<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">## value</div><div class="line">基于factory,将对象包装一个函数将其传入到factory</div></pre></td></tr></table></figure></p>
+<p>app.value(‘serviceName’,{name:1})<br>```</p>
+<h2 id="constant"><a href="#constant" class="headerlink" title="constant"></a>constant</h2>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/01/05/angular服务/" data-id="cixk2kwr60002xafy02eb471y" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-npm" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/01/01/npm/" class="article-date">
@@ -136,7 +176,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/01/01/npm/" data-id="cixegj5e50003v7fywzueqys3" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/01/01/npm/" data-id="cixk2kwr90004xafyyqfiegwk" class="article-share-link">Share</a>
       
       
     </footer>
@@ -214,7 +254,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/01/01/node/" data-id="cixegj5e30002v7fyd9w4yrk4" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/01/01/node/" data-id="cixk2kwr80003xafyzdwexlvs" class="article-share-link">Share</a>
       
       
     </footer>
@@ -255,7 +295,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/01/01/hexo/" data-id="cixegj5e00001v7fyvms59tgo" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/01/01/hexo/" data-id="cixk2kwr40001xafykpsh8qj0" class="article-share-link">Share</a>
       
       
     </footer>
@@ -400,7 +440,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/01/01/使用git/" data-id="cixegj5e60004v7fy27kot3f6" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/01/01/使用git/" data-id="cixk2kwra0005xafyiucufmzj" class="article-share-link">Share</a>
       
       
     </footer>
@@ -551,7 +591,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/12/28/angularfirst/" data-id="cixegj5dw0000v7fy2krj3vfk" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/12/28/angularfirst/" data-id="cixk2kwqz0000xafyubwbrgcg" class="article-share-link">Share</a>
       
       
     </footer>
@@ -591,6 +631,10 @@
       <ul>
         
           <li>
+            <a href="/2017/01/05/angular服务/">angular服务</a>
+          </li>
+        
+          <li>
             <a href="/2017/01/01/npm/">npm包管理</a>
           </li>
         
@@ -604,10 +648,6 @@
         
           <li>
             <a href="/2017/01/01/使用git/">使用git</a>
-          </li>
-        
-          <li>
-            <a href="/2016/12/28/angularfirst/">Angular First</a>
           </li>
         
       </ul>
